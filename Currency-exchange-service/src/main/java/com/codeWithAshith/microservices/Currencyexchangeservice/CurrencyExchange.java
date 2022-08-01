@@ -16,7 +16,7 @@ public class CurrencyExchange {
 	@Column(name = "currency_to")
 	private String to;
 	private BigDecimal conversionMultiple;
-	private int port;
+	private String port;
 	
 	
 	public CurrencyExchange() {
@@ -31,11 +31,11 @@ public class CurrencyExchange {
 	}
 
 
-	public int getPort() {
+	public String getPort() {
 		return port;
 	}
 
-	public void setPort(int port) {
+	public void setPort(String port) {
 		this.port = port;
 	}
 
