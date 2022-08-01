@@ -7,7 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 
 @Entity
-public class ExchangeValue {
+public class CurrencyExchange {
 	
 	@Id
 	private Long id;
@@ -19,10 +19,10 @@ public class ExchangeValue {
 	private int port;
 	
 	
-	public ExchangeValue() {
+	public CurrencyExchange() {
 	}
 
-	public ExchangeValue(Long id, String from, String to, BigDecimal conversionMultiple) {
+	public CurrencyExchange(Long id, String from, String to, BigDecimal conversionMultiple) {
 		super();
 		this.id = id;
 		this.from = from;
